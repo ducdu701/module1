@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> Tính điểm trung bình</h1>
+    <form>
+        <label for="toan" >Điểm toán</label>
+        <input type="number" id="toan" name="toan"><br>
+        <label for="ly">Điểm lý</label>
+        <input style="margin-left: 15px; margin-top: 15px" type="number" id="ly" name="ly"><br>
+        <label for="hoa">Điểm hoá</label>
+        <input style="margin-left: 5px; margin-top: 15px" type="number" id="hoa" name="hoa"><br>
+        <button onclick="kt()" style="margin-top: 20px">Điểm trung bình</button>
+    </form>
+<script>
+    function kt()
+    {
+        let toan = parseFloat(document.getElementById("toan").value);
+        let ly = parseFloat(document.getElementById("ly").value);
+        let hoa = parseFloat(document.getElementById("hoa").value);
+        let trungbinh = (toan + ly + hoa) / 3;
+        alert("điểm toán là: "+ toan + "   điểm lý là: "+ ly + "   điểm hoá là: "+ hoa + "   Điểm trung bình là: "+ trungbinh);
+    }
+</script>
+</body>
+</html>
