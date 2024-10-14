@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="soA" placeholder="Nhập số thứ nhất">
+    <input type="number" id="soB" placeholder="Nhập số thứ hai">
+    <button onclick="tinhCong()">Cộng</button>
+    <button onclick="tinhTru()">Trừ</button>
+    <button onclick="tinhNhan()">Nhân</button>
+    <button onclick="tinhChia()">Chia</button>
+    <p id="phepTinh"></p>
+    <script>
+        function tinhCong()
+        {
+            let a = parseFloat(document.getElementById("soA").value);
+            let b = parseFloat(document.getElementById("soB").value);
+            let cong = a + b;
+            document.getElementById("phepTinh").innerHTML="Kết quả: "+cong;
+        }
+        function tinhTru()
+        {
+            let a = parseFloat(document.getElementById("soA").value);
+            let b = parseFloat(document.getElementById("soB").value);
+            let tru = a - b;
+            document.getElementById("phepTinh").innerHTML="Kết quả: "+tru;
+        }
+        function tinhNhan()
+        {
+            let a = parseFloat(document.getElementById("soA").value);
+            let b = parseFloat(document.getElementById("soB").value);
+            let nhan = a * b;
+            document.getElementById("phepTinh").innerHTML="Kết quả: "+nhan;
+        }
+        function tinhChia()
+        {
+            let a = parseFloat(document.getElementById("soA").value);
+            let b = parseFloat(document.getElementById("soB").value);
+            let chia = a / b;
+            document.getElementById("phepTinh").innerHTML="Kết quả: "+chia;
+        }
+    </script>
+</body>
+</html>

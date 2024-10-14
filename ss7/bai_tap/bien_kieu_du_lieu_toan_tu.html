@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss7</title>
+</head>
+<body>
+        <label for="dToan">Điểm Toán</label> <input type="number" id="dToan">
+        <label for="dLy">Điểm Lý</label> <input type="number" id="dLy">
+        <label for="dHoa">Điểm Hoá</label> <input type="number" id="dHoa">
+        <button onclick="tinhTong()">Điểm Tổng</button> <button onclick="tinhTb()">Điểm trung bình</button>
+        <p id="tong"></p>
+        <p id="diemTb"></p>
+        <label for="nhietDo">Nhập độ C </label><input type="number" id="nhietDo">
+        <button onclick="chuyenDoi()">Chuyển đổi</button>
+        <p id="nhietDoF"></p>
+        <label for="bankinh">Nhập bán kính </label><input type="number" id="banKinh">
+        <button onclick="tinhDientich()">Tính diện tích hình tròn</button>
+        <button onclick="tinhChuvi()">Tính chu vi hình tròn</button>
+        <p id="dienTichhinhTron"></p>
+        <p id="chuVihinhTron"></p>
+    <script>
+
+        function tinhTong()
+        {
+            let dToan = parseFloat(document.getElementById("dToan").value);
+            let dLy = parseFloat(document.getElementById("dLy").value);
+            let dHoa = parseFloat(document.getElementById("dHoa").value);
+            let dTong = dToan + dLy + dHoa;
+            document.getElementById("tong").innerHTML="Điểm tổng là: " + dTong;
+        }
+        function tinhTb()
+        {
+            let dToan = parseFloat(document.getElementById("dToan").value);
+            let dLy = parseFloat(document.getElementById("dLy").value);
+            let dHoa = parseFloat(document.getElementById("dHoa").value);
+            let diemTb = (dToan + dLy + dHoa) / 3;
+            document.getElementById("diemTb").innerHTML="Điểm Trung bình là: " + diemTb;
+        }
+        function chuyenDoi()
+        {
+            let doC = parseFloat(document.getElementById("nhietDo").value);
+            let doF = (9*doC/5)+32;
+            document.getElementById("nhietDoF").innerHTML="Độ F là: " + doF;
+        }
+        function tinhDientich()
+        {
+            let pi = 3.14;
+            let r = parseFloat(document.getElementById("banKinh").value);
+            let dienTich = pi*(r*r);
+            document.getElementById("dienTichhinhTron").innerHTML="Diện tích hình tròn là: " + dienTich;
+        }
+        function tinhChuvi()
+        {
+            let pi = 3.14;
+            let r = parseFloat(document.getElementById("banKinh").value);
+            let chuVi = pi * r * 2;
+            document.getElementById("chuVihinhTron").innerHTML="Chu vi hình tròn là: " + chuVi;
+        }
+    </script>
+</body>
+</html>
