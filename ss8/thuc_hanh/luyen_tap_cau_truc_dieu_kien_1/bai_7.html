@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // thời gian cuộc gọi >= 150p thì giá là mỗi phút là 5000 mỗi phút
+  // thời gian cuộc gọi >= 100p thì giá là mỗi phút là 3000 mỗi phút
+  // thời gian cuộc gọi từ 0 đến 50p thì giá là mỗi phút là 2000 mỗi phút
+  let a = +prompt("nhập số phút gọi");
+  if (a >= 150 ) {
+    let cuocPhi = a * 5000;
+    console.log("giá cước phí là: "+cuocPhi+" VND");
+  }else if (a>=100 ) {
+    let cuocPhi = a * 3000;
+    console.log("giá cước phí là: "+cuocPhi+" VND");
+  }else {
+    let cuocPhi = a * 2000;
+    console.log("giá cước phí là: "+cuocPhi+" VND");
+  }
+</script>
+</body>
+</html>
