@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số số điện tiêu thụ:")
+    if (a <= 50) {
+        let giaTien = a * 1806;
+        console.log("giá tiền điện là: " + giaTien);
+    } else if (a <= 100) {
+        let giaTien = (50 * 1806) + ((a - 50) * 1866);
+        console.log("giá tiền điện là: " + giaTien);
+    } else if (a <= 200) {
+        let giaTien = (50 * 1806) + (50 * 1866) + ((a - 100) * 2167);
+        console.log("giá tiền điện là: " + giaTien);
+    } else if (a <= 300) {
+        let giaTien = (50 * 1806) + (50 * 1866) + (100 * 2167) + ((a - 200) * 2729);
+        console.log("giá tiền điện là: " + giaTien);
+    } else if (a <= 400) {
+        let giaTien = (50 * 1806) + (50 * 1866) + (100 * 2167) + (100 * 2729) + ((a - 300) * 3050);
+        console.log("giá tiền điện là: " + giaTien);
+    } else {
+        let giaTien = (50 * 1806) + (50 * 1866) + (100 * 2167) + (100 * 2729) + (100 * 2729) + ((a - 400) * 3151);
+        console.log("giá tiền điện là: " + giaTien);
+    }
+</script>
+</body>
+</html>
