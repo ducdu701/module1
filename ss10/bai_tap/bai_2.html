@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    while (true) {
+        nhietDo = prompt("Nhập nhiệt độ hiện tại (độ C):");
+
+        if (nhietDo>=20&&nhietDo<=100) {
+            alert("nhiệt độ hiện tại là "+nhietDo+" nếu muốn dừng lại hãy nhập chữ cái");
+        } else if (nhietDo > 100) {
+            alert("yêu cầu người dùng giảm nhiệt độ.");
+        } else if (nhietDo < 20) {
+            alert(" yêu cầu người dùng tăng nhiệt độ.");
+        } else {
+            alert("kết thúc chương trình");
+            break;
+        }
+    }
+</script>
+</body>
+</html>

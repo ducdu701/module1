@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let tong = 0;
+  let number = 0;
+  for (let i = 0; i <= 1000; i++){
+    if (i%7===0){
+      tong = tong + i;
+      number = number+1;
+    }
+    if (number === 31)
+    {
+      break;
+    }
+  }
+  console.log(tong);
+</script>
+</body>
+</html>
