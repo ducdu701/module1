@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số lượng số fibonacci bạn muốn in")
+    let number1 = 1;
+    let number2 = 0;
+    let fibonacci = 0;
+    for (let i = 0; i < a; i++) {
+        if (i === 0) {
+            fibonacci = i + 1;
+            document.write(fibonacci + "<br>");
+        } else if (i === 1) {
+            fibonacci = i;
+            document.write(fibonacci + "<br>");
+        } else {
+            number2 = number1;
+            number1 = fibonacci;
+            fibonacci = number2 + number1;
+            document.write(fibonacci + "<br>");
+        }
+    }
+</script>
+</body>
+</html>
