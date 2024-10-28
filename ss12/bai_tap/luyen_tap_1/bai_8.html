@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [];
+  let tam = 0;
+  for (let i = 0; i < 10; i++) {
+    a[i] = +prompt("nhập số thứ " + i);
+  }
+  for (let i = 0; i < a.length; i++) {
+    for (let j= i+1; j < a.length ; j++){
+      if (a[i]<a[j]){
+        tam = a[i];
+        a[i] = a[j]
+        a[j] = tam;
+      }
+    }
+    console.log(a[i]);
+  }
+
+</script>
+</body>
+</html>

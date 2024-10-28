@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [];
+  let b = [];
+  let c = []
+  for (let i = 0; i < 10; i++) {
+    a[i] = +prompt("nhập số thứ " + i+" của a");
+  }
+  for (let i = 0; i < 10; i++) {
+    b[i] = +prompt("nhập số thứ " + i+" của b");
+  }
+  for (let i = 0; i< b.length+a.length; i++){
+    if (i<b.length){
+      c[i]=b[i];
+    } else {
+      c[i]=a[i-10];
+    }
+    console.log(c[i]);
+  }
+</script>
+</body>
+</html>

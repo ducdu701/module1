@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="translate" placeholder="nhập từ vựng">
+<button onclick="trans()">dịch</button>
+<p id="hienThi"></p>
+<script>
+  let a = ["dog","cat","fish","bat"];
+  let b = ["con chó","con mèo","con cá","con dơi"];
+  function trans (){
+    let tuVung = document.getElementById("translate").value;
+    for (let i =0; i<a.length;i++){
+      if (tuVung === a[i]){
+        document.getElementById("hienThi").innerHTML=b[i];
+        break;
+      } else {
+        document.getElementById("hienThi").innerHTML="Không tìm thấy";
+      }
+    }
+  }
+</script>
+</body>
+</html>

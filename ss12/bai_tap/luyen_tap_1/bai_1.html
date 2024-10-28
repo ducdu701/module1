@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let dem = 0;
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("nhập số thứ " + i);
+    }
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] >= 10) {
+            dem = dem + 1;
+        }
+    }
+    alert("có tổng có " + dem + " số nguyên lớn hơn hoặc bằng 10");
+</script>
+</body>
+</html>

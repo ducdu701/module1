@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [];
+  for (let i = 0; i < 10; i++) {
+    a[i] = prompt("nhập số thứ " + i);
+  }
+  for (let i=0; i<a.length ; i++) {
+    if (a[i] === "V") {
+      if (i!==a.length-1){
+        a[i] = a[i+1];
+        a[i+1] = "V";
+      } else {
+        a[i]=0;
+      }
+    }
+    console.log(a[i]);
+  }
+</script>
+</body>
+</html>
