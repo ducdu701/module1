@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [0, 1, 2, 3, "Hi", "hello"];
+    let dem = 0;
+
+    document.write("Mảng: " + a.join("-") + "<br>");
+    document.write("Kích thước: " + a.length + "<br>");
+
+    for (let i = 0; i < a.length; i++) {
+        if (typeof a[i] === "number") {
+            dem++;
+        }
+    }
+    document.write("Trong mảng có: " + dem + " kí tự số" + "<br>");
+</script>
+</body>
+</html>

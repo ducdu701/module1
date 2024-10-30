@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [];
+  let b = [];
+  let c = true;
+  for (let i = 0; i < 5; i++) {
+    a[i] = +prompt("nhập số thứ của a" + i);
+  }
+  for (let i = 0; i < 5; i++) {
+    b[i] = +prompt("nhập số thứ của b" + i);
+  }
+  for (let i = 0; i < 5; i++) {
+    if (a[i]===b[i]){
+      c = true;
+    } else {
+      c = false;
+      console.log("2 mảng khác nhau");
+      break;
+    }
+  }
+  if (c === true ){
+    console.log("2 mảng giống nhau")
+  }
+
+</script>
+</body>
+</html>
