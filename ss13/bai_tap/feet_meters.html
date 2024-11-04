@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input id="meter" type="number" placeholder="nhập">
+    <button onclick="changeFeet()">đổi feet</button>
+    <input id="feet" placeholder="nhập">
+    <button onclick="changeMeter()">đổi meter</button>
+</label>
+<script>
+    function changeMeter() {
+        let a = parseInt(document.getElementById("feet").value);
+        let ketQua = a * 0.305;
+        alert("meter = " + ketQua);
+        return ketQua;
+    }
+
+    function changeFeet() {
+        let b = parseInt(document.getElementById("meter").value);
+        let ketQua = b * 3.279;
+        alert("feet = " + ketQua);
+        return ketQua;
+    }
+</script>
+</body>
+</html>

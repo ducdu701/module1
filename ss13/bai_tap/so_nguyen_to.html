@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số cần kiểm tra");
+    soNguyento(a);
+
+    function soNguyento(number) {
+        let dem = 0;
+        if (number === 0) {
+            alert("không phải số nguyên tố");
+        } else {
+            for (let i = 1; i <= number; i++) {
+                if (number % i === 0) {
+                    dem=dem+1;
+                }
+            }
+            if (dem === 2) {
+                alert("là số nguyên tố")
+                return true;
+            } else {
+                alert("không phải số nguyên tố");
+                return false;
+            }
+        }
+    }
+</script>
+</body>
+</html>

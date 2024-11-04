@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+<input id="ngoiSao" placeholder="nhập tên ngôi sao">
+<button onclick="kiemTra()">kiểm tra</button>
+</label>
+<script>
+    let sao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" ,"Leo"];
+  function kiemTra(){
+    let a = document.getElementById("ngoiSao").value;
+    let tam = true;
+    for (let i=0;i<sao.length;i++){
+        if (a===sao[i]){
+          alert("chòm sao tương ứng là "+chomSao[i]);
+          tam = true;
+          break;
+        } else {
+            tam = false;
+        }
+    }
+    if (tam === false){
+        alert("không tìm thấy chòm sao của ngôi sao này");_
+    }
+  }
+</script>
+</body>
+</html>
